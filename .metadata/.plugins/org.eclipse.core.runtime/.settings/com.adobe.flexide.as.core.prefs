@@ -1,0 +1,5 @@
+#Fri Mar 29 09:15:06 CST 2013
+orderOfImports=com,flash,mx,spark,
+com.adobe.flexide.as.core.filetemplates.=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+eclipse.preferences.version=1
+asCycling=[cycle.templates,true,2][cycle.variables,true,3][cycle.functions,true,4][cycle.class,true,5][cycle.package,true,6][cycle.namespaces,true,7]
