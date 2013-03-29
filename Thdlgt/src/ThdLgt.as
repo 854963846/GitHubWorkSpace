@@ -17,8 +17,6 @@ package
 			
 			var loadMap:LoadMap = new LoadMap();
 			var gameCmd:GameCmd = new GameCmd();
-			
-			trace("xxxx");
 		}
 	}
 }

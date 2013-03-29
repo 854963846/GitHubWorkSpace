@@ -48,7 +48,7 @@ package com.ai
 			if( Global._stageObjs.enemyPlanes.length == 0 ){
 				//switch(time++)
 					//switch(randomAI())
-					switch(3)
+					switch(5)
 				{
 					case 1: firstTypeAI.ai(); break;
 					case 2: secondTypeAI.ai(); break;

@@ -3,10 +3,12 @@ package com.ai.type
 	import com.plane.PlaneEnemy;
 	import com.plane.enemy.FiveTypeEnemy;
 	import com.scene.StageObjects;
+	import com.utils.Utils;
 	
 	import flash.display.Bitmap;
 	import flash.events.TimerEvent;
 	import flash.utils.Timer;
+	import flash.utils.setTimeout;
 	
 	
 	
@@ -89,13 +91,17 @@ package com.ai.type
 			for (var i:int = 1; i <= planeArr.length; i++) 
 			{
 				var cur:PlaneEnemy = planeArr[i-1];
-				var bm:Bitmap= cur.bullet.bitMap;
-				
-				if(Global._stageObjs.enemyPlanes.indexOf(cur)!=-1&& !Global._stageObjs.bulletSpeed.hasOwnProperty(bm.name))
+				for (var j:int = 0; j < 5; j++) 
 				{
+					var bm:Bitmap=Utils.cloneBitMap(cur.bullet.bitMap);
+					bm.name=cur.bullet.bitMap.name;
+					//if(Global._stageObjs.enemyPlanes.indexOf(cur)!=-1) //&& !Global._stageObjs.bulletSpeed.hasOwnProperty(bm.name)
+					//{
 					bm.width=10, bm.height=10;
-					bm.x=cur.bitMap.x+cur.bitMap.width*0.5-bm.width*0.5, bm.y=cur.bitMap.y + cur.bitMap.height;
+					bm.x=cur.bitMap.x + cur.bitMap.width * 0.5 - bm.width * 0.5 - 20 * (j - 2), bm.y=cur.bitMap.y + cur.bitMap.height * 0.5;
+
 					Global._stageObjs.addEnemyBullets(bm);
+					//}
 				}
 			}
 		}

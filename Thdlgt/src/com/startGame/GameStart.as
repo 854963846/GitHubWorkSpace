@@ -160,8 +160,8 @@ package com.startGame
 				if(bullet.y>=Global._stage.stageHeight)
 				{
 					Global._stageObjs.removeEnemyBullets( bullet );
-					stageObjs.removeEnemyBulletSpeed( bullet.name );
-					stageObjs.removeEnemyBulletKill( bullet.name )
+					//stageObjs.removeEnemyBulletSpeed( bullet.name );
+					//stageObjs.removeEnemyBulletKill( bullet.name )
 				}
 			}		
 		}
