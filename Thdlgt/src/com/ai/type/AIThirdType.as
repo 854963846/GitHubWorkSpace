@@ -64,6 +64,7 @@ package com.ai.type
 					var lineNum:int = Math.floor(390/width);
 					cur.bitMap.x=width * (i % lineNum);
 					cur.bitMap.y=-height * Math.floor(i / lineNum);
+					cur.bitMap.smoothing = true;
 					stageObjs.addEnemyPlanes( cur );
 				}
 				distTimer.addEventListener( TimerEvent.TIMER, planeMove );

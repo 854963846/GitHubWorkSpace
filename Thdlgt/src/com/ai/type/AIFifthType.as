@@ -8,7 +8,6 @@ package com.ai.type
 	import flash.display.Bitmap;
 	import flash.events.TimerEvent;
 	import flash.utils.Timer;
-	import flash.utils.setTimeout;
 	
 	
 	
@@ -66,6 +65,7 @@ package com.ai.type
 					var px:Number = cur.bitMap.x, py:Number = cur.bitMap.y,
 						width:Number = cur.bitMap.width;
 					cur.bitMap.y = -width, cur.bitMap.x = 85;
+					cur.bitMap.smoothing = true;
 					stageObjs.addEnemyPlanes( cur );
 				}
 				distTimer.addEventListener( TimerEvent.TIMER, planeMove );

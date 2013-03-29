@@ -60,6 +60,7 @@ package com.ai.type
 				{
 					var cur:PlaneEnemy = firtTypePlaneArr[i-1];
 					cur.bitMap.x = 200;
+					cur.bitMap.smoothing = true;
 					stageObjs.addEnemyPlanes( cur );
 					TweenLite.to( cur.bitMap, 2, {y:50*i});
 				}

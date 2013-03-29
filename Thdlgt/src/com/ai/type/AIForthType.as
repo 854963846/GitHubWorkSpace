@@ -65,6 +65,7 @@ package com.ai.type
 					var px:Number = cur.bitMap.x, py:Number = cur.bitMap.y,
 						width:Number = cur.bitMap.width;
 					cur.bitMap.y = 150;
+					cur.bitMap.smoothing = true;
 					if( i%2 == 0 )
 					{
 						cur.bitMap.x = -width*i;

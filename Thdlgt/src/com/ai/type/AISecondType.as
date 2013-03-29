@@ -59,6 +59,7 @@ package com.ai.type
 					var cur:PlaneEnemy = secondTypePlaneArr[i-1];
 					var px:Number = cur.bitMap.x, py:Number = cur.bitMap.y,
 						width:Number = cur.bitMap.width;
+					cur.bitMap.smoothing = true;
 					cur.bitMap.y = 100-width*i, cur.bitMap.x = -width*i;
 					stageObjs.addEnemyPlanes( cur );
 				}
